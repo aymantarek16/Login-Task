@@ -1,0 +1,240 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*=============== BASE =======================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  direction: ltr;
+  font-family: "Poppins", sans-serif;
+}
+
+
+::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  height: 100vh;
+  background-color: rgb(76, 72, 72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15rem;
+}
+
+/*=============== Login Card ===============*/
+
+.login__card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 95%;
+}
+
+/* Part 1 */
+.login__card .login__form {
+  background: white;
+  border-radius: 24px 0 0 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.login__card .login__form .login_text {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.login__card .login__form .login_desc {
+  color: #525252;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.login__card .login__form .user_input {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.login__card .login__form .password_input {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.login__card .login__form input {
+  width: 364px;
+  height: 52px;
+  border: none;
+  outline: none;
+  padding: 10px 40px;
+  border-radius: 16px;
+  background: #F0EDFFCC;
+  font-size: 16px;
+}
+
+.login__card .login__form .user_input img,
+.login__card .login__form .password_input img {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 18px;
+  height: 19px;
+}
+
+
+
+.login__card .login__form input::placeholder {
+  color: #000;
+  font-size: 12px;
+}
+
+
+.login__card .login__form .login_button {
+  background: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
+  box-shadow: 0px 8px 21px 0px #00000029;
+  width: 124px;
+  height: 52px;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.login__card .login__form span {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.login__card .login__form span a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.login__card .login__form span::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: -80%;
+  border: 1px solid #F0EDFF;
+}
+
+.login__card .login__form span::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: 105%;
+  border: 1px solid #F0EDFF;
+}
+
+.login__card .login__form .login_google,
+.login__card .login__form .login_facebook {
+  margin-bottom: 16px;
+  border: 1px solid #F0EDFF;
+  border-radius: 16px;
+  width: 70%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__card .login__form .login_google img,
+.login__card .login__form .login_facebook img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.login__card .login__form .login_google div,
+.login__card .login__form .login_facebook div {
+  font-weight: bold;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+
+
+/* Part 2 */
+.login__card .login__details {
+  border-radius: 0 24px 24px 0;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(217.64deg, #9181F4 -5.84%, #5038ED 106.73%);
+  background-image: url("../img/pattern.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+}
+
+.login__card .login__details .login__details__card {
+  position: relative;
+  height: 60%;
+  width: 90%;
+  background-image: url("../img/womenPattern.png");
+  border-radius: 30px;
+  padding: 25px ;
+}
+
+.login__card .login__details .login__details__card .login__details__card__text {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  width: 70%;
+}
+
+.login__card .login__details .login__details__card .women__img {
+  position: absolute;
+  top: 5%;
+  right: -22%;
+  width: 160%;
+  height: 95%;
+
+}
+
+.login__card .login__details .login__details__card .power__img {
+  position: absolute;
+  bottom: 70px;
+  left: -20px;
+  width: 42px;
+  height: 42px;
+}
